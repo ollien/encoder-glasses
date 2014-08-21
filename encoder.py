@@ -16,7 +16,7 @@ draw = ImageDraw.Draw(img)
 #Make the whole image white
 draw.rectangle([(0,0),(img.size[0],img.size[1])],fill=(255,255,255))
 #Draw some text in a very light blue
-draw.text(((img.size[0]-size[0])/2,(img.size[1]-size[1])/2),text,(200,255,255),font=font)
+draw.text(((img.size[0]-size[0])/2,(img.size[1]-size[1])/2),text,(215,255,255),font=font)
 p = img.load()
 for i in range(img.size[0]*img.size[1]):
 	if bool(randBits(1)):
